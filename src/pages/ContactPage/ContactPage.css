@@ -1,0 +1,20 @@
+.div-ContactPage-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid var(--third);
+  padding: 2.5vh;
+}
+
+.contact-icon{
+  color: var(--dark);
+  font-size: 5vh;
+  margin-right: 2vh;
+}
+
+.div-ContactPage-container li {
+font-size: 1.5rem;
+display: flex;
+align-items: center;
+}
+
