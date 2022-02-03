@@ -88,5 +88,12 @@ li {
 
 /* 3 Block */
 /* 4 inline */
+
+h1{
+    text-align: center;
+    color: var(--third);
+    font-family: var(--subTitleFont);
+    font-size: 5rem;
+}
 /* 5 ID */
 /* 6 Classes */
