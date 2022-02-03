@@ -1,0 +1,9 @@
+.TileDescription-contailer{
+  padding: 2vh;
+  display: flex;
+}
+
+.items-TileDescription{
+  width: 100%;
+  flex-direction: column;
+}
