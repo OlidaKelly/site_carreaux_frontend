@@ -94,6 +94,14 @@ h1{
     color: var(--third);
     font-family: var(--subTitleFont);
     font-size: 5rem;
+    padding: 2vh
+}
+
+h3{
+    color: var(--third);
+    font-family: var(--subTitleFont);
+    font-size: 1.1rem;
+   
 }
 /* 5 ID */
 /* 6 Classes */

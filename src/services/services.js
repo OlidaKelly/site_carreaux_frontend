@@ -6,5 +6,4 @@ const strLimit = (string, limit) => {
   );
 };
 
-
-export default strLimit;
+export default { strLimit };
