@@ -6,21 +6,13 @@ import Services from '../../services/services';
 import './ProductCard.css';
 
 const ProductCard = ({ datas }) => {
-  // const [category, setCategory] = useState();
 
-  // useEffect(() => {
-  //   axios.get('http://localhost:5001/categories').then(({ data }) => {
-  //     const cat = data?.filter((c) => c.id === datas.id_category);
-  //     setCategory(cat[0].name);
-  //   });
-  // }, []);
 
   return (
     <div className="ProductCard">
       <img className="img-product-card" src={datas.image} alt={datas.name} />
       <div className="product-infos-container">
         <h3>{datas.name}</h3>
-        {/* <span className="tag">{datas.category}</span> */}
         <p className="description">
           {Services.strLimit(datas.description, 60)}
           <br />

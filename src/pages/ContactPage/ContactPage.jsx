@@ -11,7 +11,7 @@ const ContactPage = () => {
   const [about, setAbout] = useState();
 
   useEffect(() => {
-  axios.get('http://localhost:5001/about/1').then(({ data }) => {
+  axios.get('http://localhost:5000/about/1').then(({ data }) => {
     setAbout(data);
   });
   }, []);
@@ -23,7 +23,7 @@ const ContactPage = () => {
         <div className="infos">
           <ul>
             <Link to={`tel:${about?.phone}`}>
-              <li>
+              <li className=''>
                <BsWhatsapp className='contact-icon'/>
                 {about?.phone}
               </li>

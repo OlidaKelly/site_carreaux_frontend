@@ -7,13 +7,13 @@ import './TileDescription.css';
 
 const TileDescription = () => {
   const [dataProduct, setDataProduct] = useState([]);
-  const [category, setCategory] = useState();
+  // const [dataCategory, setDataCategory] = useState();
 
   const {id} = useParams();
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5001/products/${id}`)
+      .get(`http://localhost:5000/products/${id}`)
       .then(({ data }) => setDataProduct(data));
 
   }, []);
@@ -24,17 +24,14 @@ const TileDescription = () => {
       <img src={dataProduct.image} alt={dataProduct.name} />
         <div className="items-TileDescription">
           <span className="tag">{dataProduct.type}</span>
-          <br/>
           <p className="description">
             {dataProduct.description}
           </p>
-          <br/>
           <p>Réference : {dataProduct.reference}</p>
           <p>Couleur : {dataProduct.color}</p>
           <p>Support de destination : {dataProduct.destination}</p>
           <p className="size">Largeur : {dataProduct.size}</p>
           <p className="tickness">Epaisseur : {dataProduct.tickness}</p>
-          <br/>
         <Link to={`/contact`} >
           <Button className="button-contact" text={"Voir la disponibilité"}/>  
         </Link>
